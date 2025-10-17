@@ -7,7 +7,17 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.lightBlue,
-      body: Center(child: const Text('Hola mundo desde mi nuevo HomeScreen')),
+      appBar: AppBar(title: Text('HomeScreen'), elevation: 10.0),
+      body: Center(
+        child: const Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Text('Columna 1'),
+            SizedBox(height: 100),
+            Text('Columna 2'),
+          ],
+        ),
+      ),
     );
   }
 }
